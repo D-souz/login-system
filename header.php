@@ -10,8 +10,8 @@
         <header> 
             <div>
                 <!-- login form if the user already has an account -->
-                <form action="includes/login.php" method="post" id="form">
-                    <input type="text" name="mailuid" placeholder="Username/Email..."><br><br>
+                <form action="includes/login.php" method="post">
+                    <input type="text" name="mailuid" placeholder="Username / Email..."><br><br>
                     <input type="password" name="pwd" placeholder="Password..."><br><br>
                     <button type="submit" name="login-submit">Login</button>
                 </form><br>
