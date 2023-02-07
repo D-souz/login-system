@@ -47,8 +47,8 @@ if (isset($_POST['signup-submit'])) {
             header("Location: ../signup.php?error=sqlError");
             exit(); 
         }
-        else if () {
-            mysqli_stmt_bind_param($stmt, "s", userName);
+        else {
+            mysqli_stmt_bind_param($stmt, "s", $userName);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
             $resultCheck = mysqli_stmt_num_rows($stmt); // the rows returned must be 0 or 1
@@ -83,6 +83,6 @@ if (isset($_POST['signup-submit'])) {
 }
 
 else {
-    header("Location: ../signup.php");
+    header("Location: ../signup.php?signup=success");
     exit();
 }
